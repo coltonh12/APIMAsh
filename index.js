@@ -1,7 +1,7 @@
 // Function to fetch weather data
 async function fetchWeather() {
     const apiKey = '59ce3a80fe2c9388238366c9f3c48530';
-    const city = 'New York'; // Example city
+    const city = 'New York'; // 
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     
     try {
