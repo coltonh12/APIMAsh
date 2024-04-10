@@ -2,7 +2,7 @@
 async function fetchWeather() {
     const apiKey = '59ce3a80fe2c9388238366c9f3c48530';
     const city = 'New York'; 
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+    const url = 'https://api.openweathermap.org/data/2.5/weather?q=New%20York&appid=59ce3a80fe2c9388238366c9f3c48530';
 
     
     try {
