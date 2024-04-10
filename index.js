@@ -1,7 +1,7 @@
 // Function to fetch weather data
 async function fetchWeather() {
     const apiKey = '59ce3a80fe2c9388238366c9f3c48530';
-    const city = 'New York'; // 
+    const city = 'New York'; 
     const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
     
     try {
@@ -18,8 +18,8 @@ async function fetchWeather() {
 // Function to fetch traffic data
 async function fetchTraffic() {
     const apiKey = 'mEPpNOvGzpkjA830m1tpid6l8KpGbAZN';
-    const lat = 40.7128; // Example latitude
-    const lon = -74.0060; // Example longitude
+    const latitude= 40.7128; // Example latitude
+    const longitude = -74.0060; // Example longitude
     const url = `https://api.tomtom.com/traffic/services/4/incidentDetails/s3/${lat},${lon}/10/-1/json?key=${apiKey}`;
 
     try {
