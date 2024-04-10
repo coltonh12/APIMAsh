@@ -43,7 +43,7 @@
         </div>
     </div>
     <script>
-        // Function to fetch weather data
+        
         async function fetchWeather() {
             const apiKey = '59ce3a80fe2c9388238366c9f3c48530';
             const city = 'New York';
@@ -60,11 +60,11 @@
             }
         }
 
-        // Function to fetch traffic data
+        
         async function fetchTraffic() {
             const apiKey = 'R1t70C69lxJyezKuC4dR8eifiuLP5YoS';
-            const latitude = 40.7128; // Example latitude
-            const longitude = -74.0060; // Example longitude
+            const latitude = 42.7370; 
+            const longitude = 84.4839;
             const url = `https://api.tomtom.com/traffic/services/4/incidentDetails/s3/${latitude},${longitude}/10/-1/json?key=${apiKey}`;
 
             try {
@@ -88,7 +88,7 @@
             }
         }
 
-        // Call functions to fetch data
+        
         fetchWeather();
         fetchTraffic();
     </script>
