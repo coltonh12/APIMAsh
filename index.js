@@ -15,12 +15,11 @@ async function fetchWeather() {
     }
 }
 
-// Function to fetch traffic data
 async function fetchTraffic() {
     const apiKey = 'mEPpNOvGzpkjA830m1tpid6l8KpGbAZN';
-    const latitude= 40.7128; // Example latitude
+    const latitude = 40.7128; // Example latitude
     const longitude = -74.0060; // Example longitude
-    const url = `https://api.tomtom.com/traffic/services/4/incidentDetails/s3/${lat},${lon}/10/-1/json?key=${apiKey}`;
+    const url = `https://api.tomtom.com/traffic/services/4/incidentDetails/s3/${latitude},${longitude}/10/-1/json?key=${apiKey}`;
 
     try {
         const response = await fetch(url);
@@ -42,8 +41,3 @@ async function fetchTraffic() {
         document.getElementById('traffic').innerHTML = `<h2>Traffic</h2><p>Error fetching data</p>`;
     }
 }
-
-// Call functions to fetch data
-fetchWeather();
-fetchTraffic();
-
