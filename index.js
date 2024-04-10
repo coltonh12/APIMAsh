@@ -18,8 +18,8 @@ async function fetchWeather() {
 
 async function fetchTraffic() {
     const apiKey = 'mEPpNOvGzpkjA830m1tpid6l8KpGbAZN';
-    const latitude = 40.7128; // Example latitude
-    const longitude = -74.0060; // Example longitude
+    const latitude = 40.758896; // Example latitude
+    const longitude = -73.985130; // Example longitude
     const url = `https://api.tomtom.com/traffic/services/4/incidentDetails/s3/${latitude},${longitude}/10/-1/json?key=${apiKey}`;
 
     try {
